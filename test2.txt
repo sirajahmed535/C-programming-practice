@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+
+int main(void)
+
+{
+    
+int a,b,result;
+    
+char c;
+    
+printf("enter your first and second number with operator \n");
+    
+    
+scanf("%d %d %c",&a,&b,&c);
+   
+    
+switch(c){
+        
+case '+':
+        
+result=a+b;
+        
+break;
+        
+        
+case '-':
+        
+result=a-b;
+        
+break;
+        
+        
+case '*':
+        
+result=a*b;
+        
+break;
+        
+        
+case '/':
+        
+result=a/b;
+        
+break;
+        
+        
+default:
+        
+printf("invalid operator");
+    
+}
+    
+printf("Result: %d %c %d %d",a,b,c,result);
+    
+return 0;
+
+}
