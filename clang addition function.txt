@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+/* declaration */
+
+int addition(int x,int y);
+
+int main()
+{
+    
+int x=4;
+    
+int y=5;
+    
+    
+int result = addition(x,y);
+    
+printf("%d+%d=%d",x,y,result);
+    
+return 0;
+
+}
+
+
+
+int addition(int x,int y)
+{
+    
+x=x+y;
+    
+return(x);
+
+}
