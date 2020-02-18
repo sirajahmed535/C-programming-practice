@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+
+//function declaration
+
+int factorial(int num);
+
+
+int main() {    
+    
+int x = 10;            //declare an int
+
+    
+printf("The factorial of %d is %d\n", x, factorial(x));             //for output the int and the factorial of int 
+ 
+    
+return 0;             //for return 
+
+}
+
+
+
+//function definition
+
+int factorial(int num) {         //this is the factorial function
+  
+    
+if (num == 1)                    /* base case */
+        
+return (1);
+    
+else
+        
+return (num * factorial(num - 1));       //factorial formula
+
+} 
