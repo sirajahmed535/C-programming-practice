@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+    
+    
+
+int main(){
+    
+  
+int years , Days , weeks;
+  
+int days = 1329;
+
+  
+  
+years = days/365;
+  
+weeks = (days%365)/7;
+  
+Days = days-((years*365) + (weeks*7));
+
+  
+  
+printf(" Days:%d",Days);
+  
+printf(" years:%d",years);
+  
+printf(" weeks:%d",weeks);
+
+
+return 0;
+   
+   
+
+}
+
+
