@@ -1,0 +1,88 @@
+#include<stdio.h>
+
+#include<string.h>
+
+
+
+struct student{
+    
+char name[40];
+    
+int number;
+    
+int age;
+
+};
+
+
+
+
+void studentdata(struct student *ptr) {
+    
+printf("The student data \n");
+    
+printf("Name is: %s \n",ptr->name);
+    
+printf("Number is: %d \n",ptr->number);
+    
+printf("Age is: %d \n",ptr->age);
+   
+    
+printf("\n");
+
+}
+
+
+
+int main(){
+    
+    
+struct student st1;
+    
+struct student st2;
+    
+struct student st3;
+    
+    
+
+strcpy(st1.name, "siraj");
+    
+st1.number = 21;
+    
+st1.age = 18;
+    
+    
+
+strcpy(st2.name, "ahmed");
+    
+st2.number = 28;
+    
+st2.age = 20;
+    
+    
+
+strcpy(st3.name, "kashif");
+    
+st3.number = 30;
+    
+st3.age = 22;
+    
+    
+   
+
+studentdata(&st1);
+    
+studentdata(&st2);
+    
+studentdata(&st3);
+    
+    
+    
+    
+
+
+return 0;
+
+
+}
+
