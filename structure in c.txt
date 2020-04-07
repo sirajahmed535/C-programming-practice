@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+
+
+typedef struct {     //typedef is the keyword to easy your code to understand
+    
+int street;               //These are the members of 
+    
+char *state;               //address sturcture 
+    
+char *city;
+    
+char *country;
+
+}address;              //name of the structure which is address
+
+
+
+
+typedef struct {          //here is the second structure 
+    
+int id;
+    
+int age;               //and these are the members of the structure
+    
+char *name;
+    
+address circle;         //declaration of first structure which name is address
+
+}data;                 //second stucture name is data
+
+ 
+
+data B1;         //using typedef keyword we do not attach the struct keyword in here 
+
+
+
+int main()
+{
+    
+B1.id = 123;           //the declaration of variable B1
+    
+B1.age = 23;                //   //
+    
+B1.name = "siraj";          //   //
+    
+B1.circle.street = 675;      //By using double dot in this line you can access the members of first structure
+    
+B1.circle.state = "sindh";                  //          //
+    
+B1.circle.city = "karachi";                  //            // 
+    
+B1.circle.country = "pakistan";                    //           //
+    
+    
+printf(" The id of data is: %d \n The age of data is: %d \n The name of data is: %s \n The street of address structure is: %d \n The state of address structure is: %s \n The city of address structure is: %s \n The country of address structure is: %s",B1.id,B1.age,B1.name,B1.circle.street,B1.circle.state,B1.circle.city,B1.circle.country);               //print all
+    
+    
+    
+   
+
+return 0;
+
+
+}
